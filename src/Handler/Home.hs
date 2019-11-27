@@ -6,7 +6,8 @@
 module Handler.Home where
 
 import Import
-import Network.HTTP.Types.Status
+import Text.Julius
+import Text.Lucius
 import Database.Persist.Postgresql
 
 getHomeR :: Handler Html
