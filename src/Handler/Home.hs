@@ -22,6 +22,6 @@ getHomeR = do
 getContatoR :: Handler Html
 getContatoR = do 
     defaultLayout $ do 
-        addScript $ StaticR js_teste_js
+        addScript (StaticR js_teste_js)
         toWidgetHead $(luciusFile "templates/default-layout.lucius")
         $(whamletFile "templates/contato.hamlet")
