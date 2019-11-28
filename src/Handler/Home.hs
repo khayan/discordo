@@ -14,7 +14,7 @@ getHomeR = do
     defaultLayout $ do
         toWidgetHead [julius|
             function ola(){
-                alert("ola mundo";)
+                alert("ola mundo");
             }
         |]
         toWidgetHead [lucius|
