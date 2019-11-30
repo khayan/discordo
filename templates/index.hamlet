@@ -11,7 +11,7 @@
         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         
     <a href="#principal" class="scroll">
-        <img class="arrow" src=@{StaticR img_arrow_down_png} alt="Seta de acesso para o conteúdo seguinte da página">
+        <img src=@{StaticR img_arrow_down_png} class="arrow" alt="Seta de acesso para o conteúdo seguinte da página">
 
 <main id="principal">
 
