@@ -17,8 +17,15 @@ getHomeR :: Handler Html
 getHomeR = do 
     defaultLayout $ do 
         toWidgetHead $(luciusFile "templates/default-layout.lucius")
-        $(whamletFile "templates/aaa.hamlet")
-        
+        setTitle "Discordo!"
+        addStylesheetRemote "https://fonts.googleapis.com/css?family=Anton&display=swap"
+        addScriptRemote "https://code.jquery.com/jquery-1.12.0.min.js"
+        addScript $ StaticR js_scroll_js
+        addStylesheet $ StaticR css_reset_css
+        addStylesheet $ StaticR css_estilo_css
+        $(whamletFile "templates/header.hamlet")
+        $(whamletFile "templates/index.hamlet")
+
 getContatoR :: Handler Html
 getContatoR = do 
     defaultLayout $ do 
