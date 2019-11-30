@@ -12,6 +12,7 @@ import Text.Lucius
 import Text.Julius
 --import Network.HTTP.Types.Status
 import Database.Persist.Postgresql
+import Settings.StaticFiles
 
 getHomeR :: Handler Html
 getHomeR = do 
