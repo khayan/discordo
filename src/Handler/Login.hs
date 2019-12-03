@@ -32,12 +32,8 @@ getHomeLoginR = do
         --addScript $ (StaticR js_materialize_js)
         --toWidget $(juliusFile "templates/admin.julius")
         --toWidget $(luciusFile "templates/admin.lucius")
-        --$(whamletFile "templates/header.hamlet")
         [whamlet|
         <div class="indigo z-depth-3" style="text-shadow: 1px 1px gray; padding: 10px">
-          <div class="col s12">
-             <a href="@{HomeR}" class="breadcrumb"><u>Home</u>
-             <a class="breadcrumb"><u>Login</u>
         <br>
         <main>
          <div class="row">
@@ -45,7 +41,7 @@ getHomeLoginR = do
             <div class="card light-blue darken-4">
               <div class="card-content white-text">
                 <span class="card-title">Login de Admin</span>
-                  <form action=@{AuthR} method=post enctype=#{enctype}>
+                  <form action=@{AuthenticationR} method=post enctype=#{enctype}>
                     ^{widget}
                     <button class="btn waves-effect waves-light" type="submit" name="action">Logar
                       <i class="material-icons right">send</i>
