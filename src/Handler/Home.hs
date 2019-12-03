@@ -33,3 +33,4 @@ getContatoR = do
         toWidgetHead $(juliusFile "templates/teste.julius")
         toWidgetHead $(luciusFile "templates/default-layout.lucius")
         $(whamletFile "templates/contato.hamlet")
+        $(whamletFile "templates/footer.hamlet")
