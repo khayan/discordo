@@ -3,4 +3,5 @@ Usuario
     email Text
     senha Text
     UniqueEmailIx email
+    UniqueLogin email senha
     deriving Show

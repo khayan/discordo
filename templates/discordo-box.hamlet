@@ -1,0 +1,8 @@
+<div class="pergunta-timeline">
+    <p>Você concorda...</p>
+    <p class="pergunta">legalização da Cannabis?</p>
+    <div>
+        <button class="agree"> Concordo!</button>
+        <button class="disagree">Discordo!</button>
+    </div>
+</div>
