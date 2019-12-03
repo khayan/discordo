@@ -4,8 +4,8 @@
 
 /robots.txt RobotsR GET
 
-/ LoginR GET
-/auth AuthR POST
-/logout LogoutR GET
+/ HomeLoginR GET
+/auth AuthenticationR POST
+/logout ExitLogoutR GET
 
 /home HomeR GET 

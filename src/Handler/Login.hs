@@ -15,8 +15,8 @@ formUsuario = renderDivs $ Usuario
         <$> areq textField "Email: " Nothing
         <*> areq passwordField "Senha: " Nothing
         
-getLoginR :: Handler Html
-getLoginR = do
+getHomeLoginR :: Handler Html
+getHomeLoginR = do
     maybeEmail <- lookupSession "email"
     emailText <- case maybeEmail of
         (Just a) -> do
