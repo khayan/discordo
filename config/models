@@ -1,7 +1,6 @@
 Usuario
     nome Text
-    email Text
     senha Text
-    UniqueEmailIx email
-    UniqueLogin email senha
+    UniqueNome nome
+    UniqueLogin nome senha
     deriving Show

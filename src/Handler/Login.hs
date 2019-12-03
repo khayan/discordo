@@ -12,7 +12,7 @@ import Text.Julius
 
 formUsuario :: Form Usuario
 formUsuario = renderDivs $ Usuario
-        <$> areq textField "Email: " Nothing
+        <$> areq textField "Nome: " Nothing
         <*> areq passwordField "Senha: " Nothing
         
 getHomeLoginR :: Handler Html
