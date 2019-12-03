@@ -28,7 +28,7 @@ getHomeR = do
         $(whamletFile "templates/index.hamlet")
 
 getContatoR :: Handler Html
-getContatoR = do 
+getContatoR = do
     defaultLayout $ do 
         toWidgetHead $(juliusFile "templates/teste.julius")
         toWidgetHead $(luciusFile "templates/default-layout.lucius")
