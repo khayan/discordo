@@ -17,8 +17,8 @@ formUsuario = renderDivs $ Usuario
         
 getHomeLoginR :: Handler Html
 getHomeLoginR = do
-    maybeEmail <- lookupSession "email"
-    emailText <- case maybeEmail of
+    maybeNome <- lookupSession "Nome"
+    nomeText <- case maybeNome of
         (Just a) -> do
             return a
         _ -> do
@@ -47,3 +47,22 @@ getHomeLoginR = do
                       <i class="material-icons right">send</i>
         |]
         $(whamletFile "templates/footer.hamlet")
+
+
+postAuthenticationR :: Handler Html
+postAuthenticationR = do
+                 login <- runInputPost $ ireq textField "f1"
+                 pass <- runInputPost $ ireq textField "f2"
+                 maybeAdmin <- runDB $ getBy $ UniqueLogin login pass
+                 case maybeAdmin of
+                             Just _ -> do
+                                        setSession "Nome" $ login
+                                        redirect HomeR
+                             _ -> do
+                                    redirect HomeLoginR
+
+getExitLogoutR :: Handler Html
+getExitLogoutR = do
+             deleteSession "Nome"
+             redirect HomeLoginR
+
