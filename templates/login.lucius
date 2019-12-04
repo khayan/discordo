@@ -107,11 +107,7 @@ p a:hover{
     color: #00acee;
 }
 
-.required div {
-    display: none;
-}
-
-.required button {
+.hidden {
     display: none;
 }
 
