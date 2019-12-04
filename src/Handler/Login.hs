@@ -40,7 +40,6 @@ getHomeLoginR = do
                         <input type="submit" name="action" value="Login">
                         <p>Não está cadastrado? <a href=@{ContatoR}>Crie uma conta</a></p>
         |]
-
 postAuthenticationR :: Handler Html
 postAuthenticationR = do
                  login <- runInputPost $ ireq textField "f1"
