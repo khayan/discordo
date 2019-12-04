@@ -77,7 +77,7 @@ body{
 
 .sobre div p{
     margin: 35px 0;
-    text-align: justify;
+    /*text-align: justify;*/
 }
 
 h1{
