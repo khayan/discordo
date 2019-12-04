@@ -6,7 +6,7 @@
 
 / LandingR GET
 /entrar HomeLoginR GET
-/auth AuthenticationR POST
+/auth AuthenticationR GET POST
 /sair ExitLogoutR GET
 /home HomeR GET
 /contato ContatoR GET
