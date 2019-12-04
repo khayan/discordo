@@ -10,6 +10,11 @@ import Import
 import Text.Lucius
 import Text.Julius
 
+formUsuario :: Form Usuario
+formUsuario = renderDivs $ Usuario
+        <$> areq textField "Nome: " Nothing
+        <*> areq passwordField "Senha: " Nothing
+        
 getHomeLoginR :: Handler Html
 getHomeLoginR = do
     maybeNome <- lookupSession "Nome"
@@ -18,7 +23,7 @@ getHomeLoginR = do
             return a
         _ -> do
             return ""
-    (widget,enctype) <- generateFormPost
+    (widget,enctype) <- generateFormPost formUsuario
     defaultLayout $ do
         setTitle "Discordo! | Login"
         toWidget $(luciusFile "templates/login.lucius")
@@ -33,11 +38,15 @@ getHomeLoginR = do
             <div class="formulario" >    
                 <a href="index.html"><h1>Discordo!</h1></a>
                     <form action=@{AuthenticationR} method=post enctype=#{enctype}>
-                        ^{widget}
-                        <input type="text" name="f1" id="username" placeholder="Username">
-                        <input type="password" name="f2" id="password" placeholder="Senha">
+                        <input type="text" name="username" id="username" placeholder="Username">
+                        <input type="password" name="password" id="password" placeholder="Senha">
                         <input type="submit" name="action" value="Login">
                         <p>Não está cadastrado? <a href="contato">Crie uma conta</a></p>
+
+        
+                  <form action=@{AuthenticationR} method=post enctype=#{enctype}>
+                    ^{widget}
+                    <button class="btn waves-effect waves-light" type="submit" name="action">Logar
         |]
 
 postAuthenticationR :: Handler Html
