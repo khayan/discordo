@@ -26,7 +26,6 @@ getHomeLoginR = do
     (widget,enctype) <- generateFormPost formUsuario
     defaultLayout $ do
         setTitle "Discordo! | Login"
-        toWidget $(luciusFile "templates/main.lucius")
         toWidget $(luciusFile "templates/login.lucius")
         -- ARQUIVOS EXTERNOS DE ESTILO
         --addStylesheet $ (StaticR css_materialize_css)
