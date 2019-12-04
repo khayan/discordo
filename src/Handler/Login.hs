@@ -26,7 +26,7 @@ getHomeLoginR = do
     (widget,enctype) <- generateFormPost formUsuario
     defaultLayout $ do
         setTitle "Discordo! | Login"
-        addStylesheet $ (StaticR css_login_css)
+        addStylesheet $ StaticR css_login_css
         -- ARQUIVOS EXTERNOS DE ESTILO
         --addStylesheet $ (StaticR css_materialize_css)
         --addScript $ (StaticR js_jquery_js)
