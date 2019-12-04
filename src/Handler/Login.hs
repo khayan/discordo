@@ -25,7 +25,8 @@ getHomeLoginR = do
             return ""
     (widget,enctype) <- generateFormPost formUsuario
     defaultLayout $ do
-        setTitle "Login"
+        setTitle "Discordo! | Login"
+        addStylesheet $ (StaticR css_login_css)
         -- ARQUIVOS EXTERNOS DE ESTILO
         --addStylesheet $ (StaticR css_materialize_css)
         --addScript $ (StaticR js_jquery_js)
@@ -33,6 +34,15 @@ getHomeLoginR = do
         --toWidget $(juliusFile "templates/admin.julius")
         --toWidget $(luciusFile "templates/admin.lucius")
         [whamlet|
+        <div class="container">
+            <div class="formulario" >    
+                <a href="index.html"><h1>Discordo!</h1></a>
+                    <form action=@{AuthenticationR} method=post enctype=#{enctype}>
+                        <input type="text" name="username" id="username" placeholder="Username">
+                        <input type="password" name="password" id="password" placeholder="Senha">
+                        <input type="submit" value="Log in">
+                        <p>Não está cadastrado? <a href="contato.hamlet">Crie uma conta</a></p>
+
         <div class="indigo z-depth-3" style="text-shadow: 1px 1px gray; padding: 10px">
         <br>
         <main>
