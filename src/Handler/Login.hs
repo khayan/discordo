@@ -38,7 +38,7 @@ getHomeLoginR = do
                         <input type="text" name="f1" id="username" placeholder="Username">
                         <input type="password" name="f2" id="password" placeholder="Senha">
                         <input type="submit" name="action" value="Login">
-                        <p>Não está cadastrado? <a href=@{CadastroR}>Crie uma conta</a></p>
+                        <p>Não está cadastrado? <a href=@{ContatoR}>Crie uma conta</a></p>
         |]
 
 postAuthenticationR :: Handler Html

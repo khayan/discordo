@@ -8,6 +8,6 @@
 /entrar HomeLoginR GET
 /auth AuthenticationR POST
 /sair ExitLogoutR GET
-/cadastrar CadastroR POST
+/cadastrar CadastroR GET POST
 /home HomeR GET
 /contato ContatoR GET
