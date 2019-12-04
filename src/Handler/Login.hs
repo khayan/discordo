@@ -47,7 +47,6 @@ getHomeLoginR = do
         |]
         $(whamletFile "templates/footer.hamlet")
 
-
 postAuthenticationR :: Handler Html
 postAuthenticationR = do
                  login <- runInputPost $ ireq textField "f1"
