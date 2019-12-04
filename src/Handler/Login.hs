@@ -43,7 +43,6 @@ getHomeLoginR = do
                         <input type="password" name="f2" id="password" placeholder="Senha">
                         <input type="submit" name="action" value="Login">
                         <p>Não está cadastrado? <a href="contato">Crie uma conta</a></p>
-
         |]
 
 postAuthenticationR :: Handler Html
