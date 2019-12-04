@@ -43,7 +43,6 @@ getHomeLoginR = do
                         <input type="submit" name="action" value="Login">
                         <p>Não está cadastrado? <a href="contato">Crie uma conta</a></p>
 
-        
                   <form action=@{AuthenticationR} method=post enctype=#{enctype}>
                     ^{widget}
                     <button class="btn waves-effect waves-light" type="submit" name="action">Logar
