@@ -43,6 +43,7 @@ getHomeLoginR = do
                         <input type="submit" name="action" value="Login">
                         <p>Não está cadastrado? <a href="contato">Crie uma conta</a></p>
 
+
                   <form class="hidden" action=@{AuthenticationR} method=post enctype=#{enctype}>
                     ^{widget}
                     <button type="submit" name="action">Logar
