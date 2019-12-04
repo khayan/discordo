@@ -45,10 +45,6 @@ body{
     align-items: center;
 }
 
-ul{
-    list-style-type: none;
-}
-
 .sobre div{
     display: flex;
     width: 60%;
@@ -56,7 +52,6 @@ ul{
     justify-content: space-between;
     font-family: "roboto condensed";
     color: white;
-    font-size:1em;
     font-weight: 500;
     margin: 30px;
 }
@@ -81,15 +76,6 @@ ul{
 
 .sobre div p{
     margin: 35px 0;
-}
-
-.sobre div i{
-    float: left;
-    font-size: 30px;
-}
-
-.sobre div p:nth-child(2n){
-    margin-left: 50px;
 }
 
 h1{
