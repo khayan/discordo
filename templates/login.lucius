@@ -107,6 +107,14 @@ p a:hover{
     color: #00acee;
 }
 
+.required div {
+    display: hidden;
+}
+
+.required button {
+    display: hidden;
+}
+
 @media only screen and (max-width: 972px){
     p{
         font-size: .69em;

@@ -45,7 +45,7 @@ getHomeLoginR = do
 
                   <form action=@{AuthenticationR} method=post enctype=#{enctype}>
                     ^{widget}
-                    <button class="btn waves-effect waves-light" type="submit" name="action">Logar
+                    <button class="required" type="submit" name="action">Logar
         |]
 
 postAuthenticationR :: Handler Html
