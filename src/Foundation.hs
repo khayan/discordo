@@ -29,7 +29,7 @@ instance Yesod App where
     
     isAuthorized LandingR _ = return Authorized
     isAuthorized HomeLoginR _ = return Authorized
-    isAuthorized AuthenticationR _ = return Authorized 
+    --isAuthorized AuthenticationR _ = return Authorized 
     isAuthorized (StaticR _) _ = return Authorized
     isAuthorized HomeR _ = isUsuario
     
