@@ -7,8 +7,11 @@
 module Handler.Login where
 
 import Import
+import Data.FileEmbed(embedFile)
 import Text.Lucius
 import Text.Julius
+import Database.Persist.Postgresql
+import Settings.StaticFiles
 
 formUsuario :: Form Usuario
 formUsuario = renderDivs $ Usuario
