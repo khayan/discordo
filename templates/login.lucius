@@ -61,7 +61,7 @@ form{
     flex-direction: column;
 }
 
-input[type="email"],
+input[type="text"],
 input[type="password"]{
     width: 80%;
     height: 40px;
@@ -112,7 +112,7 @@ p a:hover{
         font-size: .69em;
     }
     
-    input[type="email"],
+    input[type="text"],
     input[type="password"]{
         width: 100%;
         height: 40px;

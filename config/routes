@@ -8,4 +8,5 @@
 /auth AuthenticationR POST
 /logout ExitLogoutR GET
 
-/home HomeR GET 
+/home HomeR GET
+/contato ContatoR GET

@@ -27,7 +27,6 @@ getHomeLoginR = do
     defaultLayout $ do
         setTitle "Discordo! | Login"
         toWidget $(luciusFile "templates/login.lucius")
-        --addStylesheet $ StaticR css_login_css     NÃO DEU CERTO
         -- ARQUIVOS EXTERNOS DE ESTILO
         --addStylesheet $ (StaticR css_materialize_css)
         --addScript $ (StaticR js_jquery_js)
@@ -41,22 +40,14 @@ getHomeLoginR = do
                     <form action=@{AuthenticationR} method=post enctype=#{enctype}>
                         <input type="text" name="username" id="username" placeholder="Username">
                         <input type="password" name="password" id="password" placeholder="Senha">
-                        <input type="submit" value="Log in">
-                        <p>Não está cadastrado? <a href="contato.hamlet">Crie uma conta</a></p>
+                        <input type="submit" name="action" value="Login">
+                        <p>Não está cadastrado? <a href="contato">Crie uma conta</a></p>
 
-        <div class="indigo z-depth-3" style="text-shadow: 1px 1px gray; padding: 10px">
-        <br>
-        <main>
-         <div class="row">
-          <div class="col s6 offset-s3 valign">
-            <div class="card light-blue darken-4">
-              <div class="card-content white-text">
-                <span class="card-title">Login</span>
+        
                   <form action=@{AuthenticationR} method=post enctype=#{enctype}>
                     ^{widget}
                     <button class="btn waves-effect waves-light" type="submit" name="action">Logar
         |]
-        $(whamletFile "templates/footer.hamlet")
 
 postAuthenticationR :: Handler Html
 postAuthenticationR = do
