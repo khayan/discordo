@@ -40,11 +40,10 @@ getHomeLoginR = do
           <div class="col s6 offset-s3 valign">
             <div class="card light-blue darken-4">
               <div class="card-content white-text">
-                <span class="card-title">Login de Admin</span>
+                <span class="card-title">Login</span>
                   <form action=@{AuthenticationR} method=post enctype=#{enctype}>
                     ^{widget}
                     <button class="btn waves-effect waves-light" type="submit" name="action">Logar
-                      <i class="material-icons right">send</i>
         |]
         $(whamletFile "templates/footer.hamlet")
 
