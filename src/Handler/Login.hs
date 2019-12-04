@@ -27,7 +27,7 @@ getHomeLoginR = do
     defaultLayout $ do
         setTitle "Discordo! | Login"
         toWidget $(luciusFile "templates/login.lucius")
-        --addStylesheet $ StaticR css_login_css     NÃO DEU CERTO :(
+        --addStylesheet $ StaticR css_login_css     NÃO DEU CERTO
         -- ARQUIVOS EXTERNOS DE ESTILO
         --addStylesheet $ (StaticR css_materialize_css)
         --addScript $ (StaticR js_jquery_js)
