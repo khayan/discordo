@@ -31,7 +31,7 @@ getHomeLoginR = do
         <div class="container">
             <div class="formulario" >    
                 <a href="index.html"><h1>Discordo!</h1></a>
-                    <form action=@{AuthenticationR} method=post enctype=#{enctype}>
+                    <form action=@{AuthenticationR} method=post>
                         <input type="text" name="f1" id="username" placeholder="Username">
                         <input type="password" name="f2" id="password" placeholder="Senha">
                         <input type="submit" name="action" value="Login">
