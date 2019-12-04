@@ -1,14 +1,22 @@
 <div class="container">
     <div class="sobre">
-        <div class="titulo">
-            <h1>Discordo!
-        <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <div>
+            <ul>
+                <li>
+                    <i class="fas fa-search">
+                    <p>Lorem ipsum dolor sit amet.
+                <li>
+                    <i class="fas fa-user-friends">
+                    <p>Ut enim ad minim veniam.
+                <li>
+                    <i class="fas fa-share-alt">
+                    <p>Duis aute irure dolor in reprehenderit.
+    
     <div class="acesso">
-        <h2>Veja a opinião das pessoas do mundo inteiro agora
-        <h3>Participe hoje mesmo do Discordo!
-        <a href="cadastrar" class="cadastro botao">Inscrever-se
-        <a href="entrar" class="signin botao">Entrar
+       <div class="titulo">
+            <h1>Discordo!
+            <div>
+                <h2>Veja a opinião das pessoas do mundo inteiro agora
+                <h3>Participe hoje do Discordo!
+                <a href="cadastro.html" class="cadastro botao">Inscrever-se
+                <a href="login.html" class="signin botao">Entrar
