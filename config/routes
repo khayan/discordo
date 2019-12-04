@@ -4,9 +4,10 @@
 
 /robots.txt RobotsR GET
 
-/ HomeLoginR GET
+/ LandingR GET
+/entrar HomeLoginR GET
 /auth AuthenticationR POST
-/logout ExitLogoutR GET
-
+/sair ExitLogoutR GET
+/cadastrar CadastroR POST
 /home HomeR GET
 /contato ContatoR GET

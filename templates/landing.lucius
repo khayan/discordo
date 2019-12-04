@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Gudea:400,700');
+@import url('https://fonts.googleapis.com/css?family=Londrina+Solid&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+html{
+    font-size: 1.25em;
+}
+
+body{
+    font-family: "Gudea", Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.sobre, 
+.acesso{
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sobre{
+    background-image: radial-gradient(at 100% 100%, #74b6d4 0%, #6094be 25%, #517dae 50%, #335492 75%, #1b3160  100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.sobre div{
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "roboto condensed";
+    color: white;
+    font-size:1em;
+    font-weight: 500;
+    margin: 30px;
+}
+
+.acesso{
+    align-items: center;
+    border-bottom: 1px solid #e6ecf0;
+}
+
+.acesso div, .titulo{
+    width:30vw;
+    min-width: 350px;
+}
+.titulo{
+    padding: 20px 10px;
+}
+
+.acesso div{
+    display:flex;
+    flex-direction: column;
+}
+
+.sobre div p{
+    margin: 35px 0;
+}
+
+.sobre div i{
+    float: left;
+    font-size: 30px;
+}
+
+.sobre div p:nth-child(2n){
+    margin-left: 50px;
+}
+
+h1{
+    align-self: flex-start;
+    font-family: "Londrina Solid";
+    font-size: 38px;
+    color: #0085BA;
+    text-shadow: #000 2px 2px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+h2{
+    margin-bottom: 40px;
+}
+
+h3{
+    margin-bottom: 10px;
+}
+
+.botao{
+    padding: 6px 20px;
+    border-radius: 50px;
+    margin-top:20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    transition-property:background,color;
+    transition-duration:.2s;
+}
+
+.cadastro{
+    background-color:rgba(0, 172, 238,1);
+    border: 2px solid rgba(0, 172, 238,1);
+    color: white;
+}
+
+.cadastro:hover{
+    background-color: #0085BA;
+    border: 2px solid #0085BA;
+    color: white;
+}
+
+.signin{
+    color: #00acee;
+    border: 2px solid #00acee;
+}
+
+.signin:hover{
+    background-color: rgba(0, 172, 238,.2);
+}
+
+@media only screen and (max-width: 800px){
+    .container{
+        flex-direction: column-reverse;
+    }
+    .acesso, .sobre{
+        height: 100%;
+    }
+}
