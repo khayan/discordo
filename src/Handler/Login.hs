@@ -18,7 +18,7 @@ getHomeLoginR = do
             return a
         _ -> do
             return ""
-    (widget,enctype) <- generateFormPost formUsuario
+    (widget,enctype) <- generateFormPost
     defaultLayout $ do
         setTitle "Discordo! | Login"
         toWidget $(luciusFile "templates/login.lucius")
