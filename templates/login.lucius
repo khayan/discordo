@@ -108,11 +108,11 @@ p a:hover{
 }
 
 .required div {
-    display: hidden;
+    display: none;
 }
 
 .required button {
-    display: hidden;
+    display: none;
 }
 
 @media only screen and (max-width: 972px){
