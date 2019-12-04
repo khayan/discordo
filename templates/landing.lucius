@@ -77,6 +77,7 @@ body{
 .sobre div p{
     margin: 35px 0;
     text-align: justify;
+    
 
 h1{
     align-self: flex-start;
