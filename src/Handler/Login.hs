@@ -7,11 +7,8 @@
 module Handler.Login where
 
 import Import
-import Data.FileEmbed(embedFile)
 import Text.Lucius
 import Text.Julius
-import Database.Persist.Postgresql
-import Settings.StaticFiles
 
 formUsuario :: Form Usuario
 formUsuario = renderDivs $ Usuario
@@ -29,7 +26,8 @@ getHomeLoginR = do
     (widget,enctype) <- generateFormPost formUsuario
     defaultLayout $ do
         setTitle "Discordo! | Login"
-        addStylesheet $ StaticR css_login_css
+        toWidget $(luciusFile "templates/login.lucius")
+        --addStylesheet $ StaticR css_login_css     NÃO DEU CERTO :(
         -- ARQUIVOS EXTERNOS DE ESTILO
         --addStylesheet $ (StaticR css_materialize_css)
         --addScript $ (StaticR js_jquery_js)
