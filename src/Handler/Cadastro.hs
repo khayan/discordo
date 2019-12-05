@@ -22,5 +22,3 @@ getCadastrarR = do
         setTitle "Discordo! | Cadastro"
         toWidgetHead $(luciusFile "templates/cadastro.lucius")
         $(whamletFile "templates/cadastro.hamlet")
-        
-postCadastrarR :: Handler Html

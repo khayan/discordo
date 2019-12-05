@@ -7,7 +7,7 @@
 / LandingR GET
 /entrar HomeLoginR GET
 /auth AuthenticationR POST
-/cadastrar CadastrarR GET POST
+/cadastrar CadastrarR GET
 /sair ExitLogoutR GET
 /home HomeR GET
 /contato ContatoR GET
