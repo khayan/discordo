@@ -10,4 +10,3 @@
 /cadastrar CadastrarR GET
 /sair ExitLogoutR GET
 /home HomeR GET
-/contato ContatoR GET
