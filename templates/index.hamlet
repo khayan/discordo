@@ -2,9 +2,3 @@
     <nav class="navegacao">
         <a href=@{HomeR}>Discordo!
         <button type="button" class="adicionar">Faça sua pergunta!
-
-    
-
-<main id="principal">
-
-    <div class="timeline">

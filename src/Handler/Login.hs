@@ -24,12 +24,6 @@ getHomeLoginR = do
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
         |]
         toWidget $(luciusFile "templates/login.lucius")
-        -- ARQUIVOS EXTERNOS DE ESTILO
-        --addStylesheet $ (StaticR css_materialize_css)
-        --addScript $ (StaticR js_jquery_js)
-        --addScript $ (StaticR js_materialize_js)
-        --toWidget $(juliusFile "templates/admin.julius")
-        --toWidget $(luciusFile "templates/admin.lucius")
         [whamlet|
         <div class="container">
             <div class="formulario" >    
