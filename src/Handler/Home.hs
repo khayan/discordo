@@ -15,21 +15,17 @@ import Database.Persist.Postgresql
 import Settings.StaticFiles
 
 getHomeR :: Handler Html
-getHomeR = do 
+getHomeR = do
+    maybeNome <- lookupSession "Nome"
+		login <- case maybeNome of
+						(Just login) -> do
+								return login
+						_ -> do
+								redirect HomeLoginR
     defaultLayout $ do 
-        toWidgetHead $(luciusFile "templates/default-layout.lucius")
         setTitle "Discordo!"
         addStylesheetRemote "https://fonts.googleapis.com/css?family=Anton&display=swap"
         addScriptRemote "https://code.jquery.com/jquery-1.12.0.min.js"
-        addScript $ StaticR js_scroll_js
         addStylesheet $ StaticR css_reset_css
         addStylesheet $ StaticR css_estilo_css
         $(whamletFile "templates/header.hamlet")
-        $(whamletFile "templates/index.hamlet")
-
-getContatoR :: Handler Html
-getContatoR = do
-    defaultLayout $ do 
-        toWidgetHead $(juliusFile "templates/teste.julius")
-        toWidgetHead $(luciusFile "templates/default-layout.lucius")
-        $(whamletFile "templates/footer.hamlet")
