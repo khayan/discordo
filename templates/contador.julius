@@ -1,9 +1,0 @@
-const concordo = 0;
-const discordo = 0;
-
-function contador(c) {
-    return c === "concordo" ? concordo++ : discordo++;
-}
-
-document.querySelector("span#concordoCont").innerHTML = concordo;
-document.querySelector("spanp#discordoCont").innerHTML = discordo;
