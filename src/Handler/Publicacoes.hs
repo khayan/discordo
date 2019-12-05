@@ -15,7 +15,7 @@ import Settings.StaticFiles
 
 postPublicacoesR :: Handler Html
 postPublicacoesR = do
-    publi <- runInputPost $ ireq textField "publi"
+    publi <- runInputPost $ ireq textField "discordia"
     --concordo <- 0
     --discordo <- 0
     publiId <- runDB $ insert $ Publicacoes publi 0 0

@@ -48,4 +48,4 @@ postAuthenticationR = do
 getExitLogoutR :: Handler Html
 getExitLogoutR = do
              deleteSession "Nome"
-             redirect HomeLoginR
+             redirect LandingR
