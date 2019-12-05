@@ -1,0 +1,8 @@
+<div class="container">
+    <div class="formulario">
+        <h1>Cadastro
+        
+        <form>
+            <p class="link">  
+                <span>Usuário cadastrado com sucesso!!!
+                <a href="entrar"> Ir para Login | <a href="/">Voltar

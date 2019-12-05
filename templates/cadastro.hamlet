@@ -1,7 +1,7 @@
 <div class="container">
     <div class="formulario">
         <h1>Cadastro
-        <form method="post" action=""> 
+        <form method="post" action="@{CadastrarR}"> 
             <label for="username">Username
             <input id="username" name="username" required="required" type="text" placeholder="Escolha um username"/> 
               
@@ -9,7 +9,7 @@
             <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="Escolha uma senha"/>
              
             <label for="confirm_senha_cad">Confirme sua senha
-            <input id="confirm_senha_cad" name="senha_cad" required="required" type="password" placeholder="Confirme sua senha"/>
+            <input id="confirm_senha_cad" name="confirm_senha_cad" required="required" type="password" placeholder="Confirme sua senha"/>
              
             <input type="submit" value="Cadastrar"/> 
                

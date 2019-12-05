@@ -97,6 +97,10 @@ input[type="submit"]:hover{
     font-size: .7em;
 }
 
+p span {
+    color: #0085BA;
+}
+
 @media only screen and (max-width: 972px){
     .formulario{
         height: 70%;
