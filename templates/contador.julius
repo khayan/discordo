@@ -5,10 +5,5 @@ function contador(c) {
     return c === "concordo" ? concordo++ : discordo++;
 }
 
-function getConcordo() {
-    return concordo;
-}
-
-function getDiscordo() {
-    return discordo;
-}
+document.querySelector("span#concordoCont").innerHTML = concordo;
+document.querySelector("spanp#discordoCont").innerHTML = discordo;
