@@ -38,7 +38,7 @@ getHomeR = do
             <nav>
                 <ul class="menu">
                     <li class="logo"><a href="@{HomeR}">Discordo!
-                    <li>Olá, #{nome}! Seja bem vindo!
+                    <li>Olá, #{username}! Seja bem
                     <li class="item"><a href="@{ExitLogoutR}">Sair</a>
                     <li class="toggle"><span class="bars">
         
