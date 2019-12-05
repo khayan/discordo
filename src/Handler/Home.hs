@@ -55,9 +55,9 @@ getHomeR = do
                             <p class="pergunta">#{publicacoesPubli publi}
                             <div>
                                 <button class="agree">Concordo!<br>
-                                <span class="contador">&#128077; #{publicacoesConcordo publi}
+                                <p class="contador">&#128077; #{publicacoesConcordo publi}
                                 <button class="disagree">Discordo!<br>
-                                <span class="contador">&#128078; #{publicacoesDiscordo publi}
+                                <p class="contador">&#128078; #{publicacoesDiscordo publi}
                             
             <footer>
                 <p>
