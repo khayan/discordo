@@ -1,4 +1,4 @@
 <header>
     <nav class="navegacao">
         <a href=@{HomeR}>Discordo!
-        <button type="button" class="adicionar">Faça sua pergunta!
+        <p>Bem vindo #{login}
