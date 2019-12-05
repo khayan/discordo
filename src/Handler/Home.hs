@@ -38,6 +38,7 @@ getHomeR = do
             <nav>
                 <ul class="menu">
                     <li class="logo"><a href="@{HomeR}">Discordo!
+                    <li>Olá, #{nome}! Seja bem vindo!
                     <li class="item"><a href="@{ExitLogoutR}">Sair</a>
                     <li class="toggle"><span class="bars">
         
@@ -53,10 +54,10 @@ getHomeR = do
                         <div class="pergunta-timeline">
                             <p class="pergunta">#{publicacoesPubli publi}
                             <div>
-                                <button class="agree">Concordo! &#128077;<br>
-                                <span>#{publicacoesConcordo publi}
-                                <button class="disagree">Discordo! &#128078;<br>
-                                <span>#{publicacoesDiscordo publi}
+                                <button class="agree">Concordo!<br>
+                                <span class="contador">&#128077; #{publicacoesConcordo publi}
+                                <button class="disagree">Discordo!<br>
+                                <span class="contador">&#128078; #{publicacoesDiscordo publi}
                             
             <footer>
                 <p>
