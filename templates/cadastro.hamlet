@@ -1,18 +1,18 @@
 <div class="container">
     <div class="formulario">
         <h1>Cadastro
-    <form method="post" action=""> 
-        <label for="username">Username
-        <input id="username" name="username" required="required" type="text" placeholder="Escolha um username"/> 
-          
-        <label for="senha_cad">Senha
-        <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="Escolha uma senha"/>
-         
-        <label for="confirm_senha_cad">Confirme sua senha
-        <input id="confirm_senha_cad" name="senha_cad" required="required" type="password" placeholder="Confirme sua senha"/>
-         
-        <input type="submit" value="Cadastrar"/> 
-           
-        <p class="link">  
-            Já tem conta?
-            <a href="entrar"> Ir para Login | <a href="/">Voltar
+        <form method="post" action=""> 
+            <label for="username">Username
+            <input id="username" name="username" required="required" type="text" placeholder="Escolha um username"/> 
+              
+            <label for="senha_cad">Senha
+            <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="Escolha uma senha"/>
+             
+            <label for="confirm_senha_cad">Confirme sua senha
+            <input id="confirm_senha_cad" name="senha_cad" required="required" type="password" placeholder="Confirme sua senha"/>
+             
+            <input type="submit" value="Cadastrar"/> 
+               
+            <p class="link">  
+                Já tem conta?
+                <a href="entrar"> Ir para Login | <a href="/">Voltar
