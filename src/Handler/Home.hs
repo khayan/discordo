@@ -26,10 +26,12 @@ getHomeR = do
 				
     defaultLayout $ do 
         setTitle "Discordo!"
-        addStylesheetRemote "https://fonts.googleapis.com/css?family=Anton&display=swap"
         addScriptRemote "https://code.jquery.com/jquery-1.12.0.min.js"
-        toWidgetHead $(luciusFile "templates/reset.lucius")
         toWidgetHead $(luciusFile "templates/home.lucius")
+        toWidgetHead [hamlet|
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        |]
+
         toWidget $(juliusFile "templates/navbar.julius")
 
         [whamlet|
@@ -41,21 +43,21 @@ getHomeR = do
         
             <header>
                 <form method="post" action="@{PublicacoesR}">
-                    <Legend>Plante a discórdia!
+                    <legend>Plante a discórdia!
                     <textarea name="discordia" id="discordia" cols="70" rows="5" maxlength="150" placeholder="Máx 250 caracteres">
                     <input type="submit" value="Enviar">
 
             <main id="principal">
                 <div class="timeline">
-                $forall (Entity id publi) <- publicacoes
-                    <div class="pergunta-timeline">
-                        <p>Você concorda...
-                        <p class="pergunta">#{publicacoesPubli publi}
-                        <div>
-                            <button class="agree">Concordo!
-                            <span>#{publicacoesConcordo publi}
-                            <button class="disagree">Discordo!
-                            <span>#{publicacoesDiscordo publi}
+                    $forall (Entity id publi) <- publicacoes
+                        <div class="pergunta-timeline">
+                            <p>Você concorda...
+                            <p class="pergunta">#{publicacoesPubli publi}
+                            <div>
+                                <button class="agree">Concordo!
+                                <span>#{publicacoesConcordo publi}
+                                <button class="disagree">Discordo!
+                                <span>#{publicacoesDiscordo publi}
                             
             <footer>
                 <p>
