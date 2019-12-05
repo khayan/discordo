@@ -22,7 +22,7 @@ getCadastrarR = do
         setTitle "Discordo! | Cadastro"
         toWidgetHead $(luciusFile "templates/cadastro.lucius")
         addScriptRemote "https://code.jquery.com/jquery-1.12.0.min.js"
-        $(juliusFile "templates/cadastro.julius")
+        toWidget $(juliusFile "templates/cadastro.julius")
         $(whamletFile "templates/cadastro.hamlet")
         
 postCadastrarR :: Handler Html
