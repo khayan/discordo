@@ -28,8 +28,8 @@ getHomeR = do
         setTitle "Discordo!"
         addStylesheetRemote "https://fonts.googleapis.com/css?family=Anton&display=swap"
         addScriptRemote "https://code.jquery.com/jquery-1.12.0.min.js"
-        addStylesheet $ StaticR css_reset_css
-        addStylesheet $ StaticR css_estilo_css
+        toWidgetHead $(luciusFile "templates/reset.lucius")
+        toWidgetHead $(luciusFile "templates/home.lucius")
         toWidget $(juliusFile "templates/navbar.julius")
 
         [whamlet|
