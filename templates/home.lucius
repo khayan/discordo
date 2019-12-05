@@ -265,10 +265,16 @@ header p{
         transition:all 0.3s ease 0s;
         outline: none;
     }
-    
+
+.contador {
+    display: inherit;
+    margin-top: .5em;
+}
+
 .contador p {
-    font-size: 5em;
-    margin: 1em;
+    display: inherit;
+    font-size: 1.5em;
+    justify-content: space-around;
 }
 
 li:nth-child(2) {
