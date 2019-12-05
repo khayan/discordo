@@ -37,7 +37,7 @@ getHomeR = do
         [whamlet|
             <nav>
                 <ul class="menu">
-                    <li class="logo"><a href="@{HomeR}">Discordo!</a>
+                    <li class="logo"><a href="@{HomeR}">Discordo!
                     <li class="item"><a href="@{ExitLogoutR}">Sair</a>
                     <li class="toggle"><span class="bars">
         
@@ -51,12 +51,11 @@ getHomeR = do
                 <div class="timeline">
                     $forall (Entity id publi) <- publicacoes
                         <div class="pergunta-timeline">
-                            <p>#{id}
                             <p class="pergunta">#{publicacoesPubli publi}
                             <div>
-                                <button class="agree">Concordo!
+                                <button class="agree">Concordo! <br>
                                 <span>#{publicacoesConcordo publi}
-                                <button class="disagree">Discordo!
+                                <button class="disagree">Discordo! <br>
                                 <span>#{publicacoesDiscordo publi}
                             
             <footer>
