@@ -33,6 +33,7 @@ getHomeR = do
         |]
 
         toWidget $(juliusFile "templates/navbar.julius")
+        toWidget $(juliusFile "templates/contador.julius")
 
         [whamlet|
             <nav>
@@ -54,11 +55,11 @@ getHomeR = do
                         <div class="pergunta-timeline">
                             <p class="pergunta">#{publicacoesPubli publi}
                             <div>
-                                <button class="agree">Concordo!
-                                <button class="disagree">Discordo!
+                                <button class="agree" onClick(contador("concordo"))>Concordo!
+                                <button class="disagree" onClick(contador("discordo"))>Discordo!
                             <div class="contador">
-                                <p>&#128077; #{publicacoesConcordo publi}
-                                <p>&#128078; #{publicacoesDiscordo publi}
+                                <p>&#128077; #{concordo}
+                                <p>&#128078; #{discordo}
                             
             <footer>
                 <p>
