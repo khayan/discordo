@@ -4,7 +4,7 @@
 {-# LANGUAGE MultiParamTypeClasses #-}
 {-# LANGUAGE QuasiQuotes #-}
 {-# LANGUAGE TypeFamilies #-}
-module Handler.Landing where
+module Handler.Cadastro where
 
 import Import
 import Data.FileEmbed(embedFile)
