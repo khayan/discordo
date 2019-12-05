@@ -37,8 +37,8 @@ getHomeR = do
         [whamlet|
             <nav>
                 <ul class="menu">
-                    <li class="logo"><a href="@{HomeR}">Discordo!
-                    <li class="item"><a href="@{ExitLogoutR}">Sair
+                    <li class="logo"><a href="@{HomeR}">Discordo!</a>
+                    <li class="item"><a href="@{ExitLogoutR}">Sair</a>
                     <li class="toggle"><span class="bars">
         
             <header>
