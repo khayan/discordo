@@ -17,7 +17,7 @@ import Settings.StaticFiles
 getHomeR :: Handler Html
 getHomeR = do
     maybeNome <- lookupSession "Nome"
-		login <- case maybeNome of
+	login <- case maybeNome of
 						(Just login) -> do
 								return login
 						_ -> do
