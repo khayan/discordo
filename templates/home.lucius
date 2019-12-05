@@ -265,6 +265,15 @@ header p{
         transition:all 0.3s ease 0s;
         outline: none;
     }
+    
+.contador p {
+    font-size: 2em;
+    margin: 1em;
+}
+
+li:nth-child(2) {
+    color: black;
+}
 
     .agree:hover{
         background-image: linear-gradient(315deg, #39e5b6 0%, #70b2d9 74%);
@@ -303,6 +312,7 @@ strong{
         margin-left: 1em;
     }
 }
+
 @media (max-width: 415px){
     html{
         font-size: 1.12em;
@@ -322,14 +332,6 @@ strong{
         font-size: 1.1em !important;
     }
     
-.contador p {
-    font-size: 2em;
-}
-
-li:nth-child(2) {
-    color: black;
-}
-
     div button{
         margin:0 .6em !important;
     }
