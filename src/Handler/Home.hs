@@ -33,7 +33,6 @@ getHomeR = do
         |]
 
         toWidget $(juliusFile "templates/navbar.julius")
-        toWidget $(juliusFile "templates/contador.julius")
 
         [whamlet|
             <nav>
