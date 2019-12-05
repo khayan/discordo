@@ -322,8 +322,12 @@ strong{
         font-size: 1.1em !important;
     }
     
-.contador {
+.contador p {
     font-size: 2em;
+}
+
+li:nth-child(2) {
+    color: black;
 }
 
     div button{
