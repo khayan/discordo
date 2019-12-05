@@ -51,7 +51,7 @@ getHomeR = do
                 <div class="timeline">
                     $forall (Entity id publi) <- publicacoes
                         <div class="pergunta-timeline">
-                            <p>#<span>#{id}
+                            <p>#{id}
                             <p class="pergunta">#{publicacoesPubli publi}
                             <div>
                                 <button class="agree">Concordo!
