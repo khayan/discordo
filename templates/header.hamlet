@@ -1,4 +1,0 @@
-<header>
-    <nav class="navegacao">
-        <a href=@{HomeR}>Discordo!
-        <p>Bem vindo #{login}

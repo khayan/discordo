@@ -10,3 +10,4 @@
 /cadastrar CadastrarR GET POST
 /sair ExitLogoutR GET
 /home HomeR GET
+/publicacoes PublicacoesR POST

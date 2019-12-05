@@ -4,3 +4,9 @@ Usuario
     UniqueNome nome
     UniqueLogin nome senha
     deriving Show
+    
+Publicacoes
+    publi Text
+    concordo Int
+    discordo Int
+    deriving Show
