@@ -267,7 +267,7 @@ header p{
     }
     
 .contador p {
-    font-size: 10em;
+    font-size: 5em;
     margin: 1em;
 }
 
