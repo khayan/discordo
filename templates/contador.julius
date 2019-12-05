@@ -4,3 +4,11 @@ const discordo = 0;
 function contador(c) {
     return c === "concordo" ? concordo++ : discordo++;
 }
+
+function getConcordo() {
+    return concordo;
+}
+
+function getDiscordo() {
+    return discordo;
+}

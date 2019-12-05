@@ -58,8 +58,8 @@ getHomeR = do
                                 <button class="agree" onClick(contador("concordo"))>Concordo!
                                 <button class="disagree" onClick(contador("discordo"))>Discordo!
                             <div class="contador">
-                                <p>&#128077; #{concordo}
-                                <p>&#128078; #{discordo}
+                                <p>&#128077; {getConcordo()}
+                                <p>&#128078; {getDiscordo()}
                             
             <footer>
                 <p>
