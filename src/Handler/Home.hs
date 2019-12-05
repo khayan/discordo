@@ -17,11 +17,12 @@ import Settings.StaticFiles
 getHomeR :: Handler Html
 getHomeR = do
     maybeNome <- lookupSession "Nome"
-	login <- case maybeNome of
-						(Just login) -> do
-								return login
-						_ -> do
-								redirect HomeLoginR
+    login <- case maybeNome of
+                (Just login) -> do
+                    return login
+                _ -> do
+                    redirect HomeLoginR
+				
     defaultLayout $ do 
         setTitle "Discordo!"
         addStylesheetRemote "https://fonts.googleapis.com/css?family=Anton&display=swap"
