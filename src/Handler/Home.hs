@@ -53,9 +53,9 @@ getHomeR = do
                         <div class="pergunta-timeline">
                             <p class="pergunta">#{publicacoesPubli publi}
                             <div>
-                                <button class="agree">Concordo! <br>
+                                <button class="agree">Concordo! &#128077;<br>
                                 <span>#{publicacoesConcordo publi}
-                                <button class="disagree">Discordo! <br>
+                                <button class="disagree">Discordo! &#128078;<br>
                                 <span>#{publicacoesDiscordo publi}
                             
             <footer>
