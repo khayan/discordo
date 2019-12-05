@@ -30,7 +30,6 @@ getHomeR = do
         addScriptRemote "https://code.jquery.com/jquery-1.12.0.min.js"
         addStylesheet $ StaticR css_reset_css
         addStylesheet $ StaticR css_estilo_css
-        $(whamletFile "templates/header.hamlet")
         toWidget $(juliusFile "templates/navbar.julius")
 
         [whamlet|
