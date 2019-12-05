@@ -4,5 +4,5 @@
         
         <form>
             <p class="link">  
-                <span>Usuário cadastrado com sucesso!!!
+                <span>Usuário cadastrado com sucesso!!!<br>
                 <a href="entrar"> Ir para Login | <a href="/">Voltar

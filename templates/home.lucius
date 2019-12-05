@@ -321,6 +321,10 @@ strong{
     .pergunta{
         font-size: 1.1em !important;
     }
+    
+.contador {
+    font-size: 2em;
+}
 
     div button{
         margin:0 .6em !important;
