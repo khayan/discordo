@@ -1,0 +1,11 @@
+jQuery('.validatedForm').validate({
+    rules: {
+        senha_cad: {
+            required: true,
+        },
+        confirm_senha_cad: {
+            required: true,
+            equalTo: "#senha_cad"
+        }
+    }
+}); 

@@ -1,7 +1,7 @@
 <div class="container">
     <div class="formulario">
         <h1>Cadastro
-        <form method="post" action="@{CadastrarR}"> 
+        <form method="post" action="@{CadastrarR}" class="validatedForm"> 
             <label for="username">Username
             <input id="username" name="username" required="required" type="text" placeholder="Escolha um username"/> 
               

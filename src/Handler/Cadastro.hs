@@ -21,6 +21,8 @@ getCadastrarR = do
         |]
         setTitle "Discordo! | Cadastro"
         toWidgetHead $(luciusFile "templates/cadastro.lucius")
+        addScriptRemote "https://code.jquery.com/jquery-1.12.0.min.js"
+        $(juliusFile "templates/cadastro.julius")
         $(whamletFile "templates/cadastro.hamlet")
         
 postCadastrarR :: Handler Html
@@ -29,4 +31,5 @@ postCadastrarR = do
     senha <- runInputPost $ ireq textField "senha_cad"
     userId <- runDB $ insert $ Usuario username senha
     defaultLayout $ do
+        toWidgetHead $(luciusFile "templates/cadastro.lucius")
         $(whamletFile "templates/cadastro_sucesso.hamlet")
