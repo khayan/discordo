@@ -47,15 +47,15 @@ getHomeR = do
 
             <main id="principal">
                 <div class="timeline">
-                $forall (Entity id publi concordo discordo) <- pulicacoes
+                $forall (Entity id publi) <- pulicacoes
                     <div class="pergunta-timeline">
                         <p>Você concorda...
-                        <p class="pergunta">#{publi}
+                        <p class="pergunta">#{publicacoesPubli publi}
                         <div>
                             <button class="agree">Concordo!
-                            <span>#{concordo}
+                            <span>#{publicacoesConcordo publi}
                             <button class="disagree">Discordo!
-                            <span>#{discordo}
+                            <span>#{publicacoesDiscordo publi}
                             
             <footer>
                 <p>
